@@ -13,6 +13,7 @@ export class ContactComponent implements OnInit {
   submitted = false;
   success = false;
   
+  
   constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit() {

@@ -11,4 +11,7 @@ export class DataService {
   getUsers(){
     return this.http.get('https://reqres.in/api/users')
   }
+  getDemo(){
+    return this.http.get('https://jsonplaceholder.typicode.com/posts')
+  }
 }

@@ -1,3 +1,12 @@
-<p>
-  about works!
-</p>
+<ul *ngIf="users">
+  <li *ngFor="let user of users.data">
+    <img [src]=user.avatar>
+    <p>{{user.first_name}} {{user.last_name}}</p>
+</ul>
+
+
+<ul *ngIf="Demo">
+  <li *ngFor="let data of Demo.data" >
+    <h3>{{data.title}}</h3>
+    <p>{{data.body}}</p>
+</ul>
